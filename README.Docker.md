@@ -1,22 +1,19 @@
-### Building and running your application
+# Guide Docker pour le Projet Portfolio
 
-When you're ready, start your application by running:
-`docker compose up --build`.
+Ce guide fournit des instructions sur la façon de construire, exécuter et déployer votre application Portfolio en utilisant Docker.
 
-Your application will be available at http://localhost:3030.
+## Prérequis
 
-### Deploying your application to the cloud
+- [Docker](https://www.docker.com/get-started) installé sur votre machine.
+- [Docker Compose](https://docs.docker.com/compose/install/) installé (si vous utilisez Docker Compose).
 
-First, build your image, e.g.: `docker build -t myapp .`.
-If your cloud uses a different CPU architecture than your development
-machine (e.g., you are on a Mac M1 and your cloud provider is amd64),
-you'll want to build the image for that platform, e.g.:
-`docker build --platform=linux/amd64 -t myapp .`.
+## Clonage du Dépôt
 
-Then, push it to your registry, e.g. `docker push myregistry.com/myapp`.
+Tout d'abord, clonez le dépôt sur votre machine locale :
 
-Consult Docker's [getting started](https://docs.docker.com/go/get-started-sharing/)
-docs for more detail on building and pushing.
+```bash
+git clone https://github.com/aldino2001/portfolio.git
+cd portfolio 
 
-### References
-* [Docker's Node.js guide](https://docs.docker.com/language/nodejs/)
+
+docker compose up --build
