@@ -66,7 +66,7 @@ COPY --from=build /usr/src/app/comma-separate if multiple ./comma-separate if mu
 
 
 # Expose the port that the application listens on.
-EXPOSE 3030
+EXPOSE 3000
 
 # Run the application.
 CMD npm start
