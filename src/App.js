@@ -1,7 +1,5 @@
-import logo from './logo.svg';
-import Card from '@mui/material/Card';
+//import logo from './logo.svg';
 import ContentFile from './Component/ContentFile';
-import { CssBaseline, Container, Box } from '@mui/material';
 import './App.css';
 
 function App() {
