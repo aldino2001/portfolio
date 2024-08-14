@@ -42,6 +42,10 @@ jobs:
     - name: Build and push Docker image
       run: |
         docker buildx build --platform linux/amd64 -t ralobo/portfolio:latest --push .
+        docker pull ralobo/portfolio:latest
+        docker stop portfolio || true
+        docker rm portfolio || true
+        docker run -d -p 80:80 --name portfolio ralobo/portfolio:latest
 
     - name: Deploy to production
       run: echo "Deploy steps here"
