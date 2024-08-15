@@ -24,5 +24,5 @@ jobs:
 
       - name: Deploy to server
         run: |
-          scp -r ./build Aldino2001@192.168.100.209:/path/to/deploy
-          ssh Aldino2001@192.168.100.209 "cd /path/to/deploy && ./deploy-script.sh"
+          scp -r ./build Aldino2001@192.168.100.209:/portfolio
+          ssh Aldino2001@192.168.100.209 "cd /portfolio && ./deploy-script.sh"
