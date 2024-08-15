@@ -42,10 +42,29 @@ jobs:
     - name: Build and push Docker image
       run: |
         docker buildx build --platform linux/amd64 -t ralobo/portfolio:latest --push .
-        docker pull ralobo/portfolio:latest
-        docker stop portfolio || true
-        docker rm portfolio || true
-        docker run -d -p 80:80 --name portfolio ralobo/portfolio:latest
 
     - name: Deploy to production
-      run: echo "Deploy steps here"
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        DOCKER_HOST_IP: ${{ secrets.DOCKER_HOST_IP }}
+        DOCKER_HOST_USER: ${{ secrets.DOCKER_HOST_USER }}
+      run: |
+        # Install SSH client
+        sudo apt-get update
+        sudo apt-get install -y openssh-client
+
+        # Setup SSH key
+        mkdir -p ~/.ssh
+        echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+
+        # Add SSH key to the list of known hosts
+        ssh-keyscan -H $DOCKER_HOST_IP >> ~/.ssh/known_hosts
+
+        # Deploy the Docker image on the server
+        ssh -o StrictHostKeyChecking=no $DOCKER_HOST_USER@$DOCKER_HOST_IP << 'EOF'
+          docker pull ralobo/portfolio:latest
+          docker stop portfolio || true
+          docker rm portfolio || true
+          docker run -d -p 80:80 --name portfolio ralobo/portfolio:latest
+        EOF

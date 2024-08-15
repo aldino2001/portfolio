@@ -42,10 +42,15 @@ jobs:
     - name: Build and push Docker image
       run: |
         docker buildx build --platform linux/amd64 -t ralobo/portfolio:latest --push .
-        docker pull ralobo/portfolio:latest
-        docker stop portfolio || true
-        docker rm portfolio || true
-        docker run -d -p 80:80 --name portfolio ralobo/portfolio:latest
 
     - name: Deploy to production
-      run: echo "Deploy steps here"
+      uses: appleboy/drone-ssh-action@v1
+      with:
+        host: ${{ secrets.DOCKER_HOST_IP }}
+        username: ${{ secrets.DOCKER_HOST_USER }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        script: |
+          docker pull ralobo/portfolio:latest
+          docker stop myapp-container || true
+          docker rm myapp-container || true
+          docker run -d -p 3000:3000 --name myapp-container ralobo/portfolio:latest
