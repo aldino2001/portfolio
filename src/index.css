@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  background-color: rgb(77, 76, 83);
+  color: black;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -8,6 +10,7 @@ body {
 }
 
 code {
+  background-color: black;
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
