@@ -1,0 +1,76 @@
+/* src/components/HeroSection.css */
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('../Asset/developer.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* couleur de fond sombre */
+    color: #fff; 
+    /* font-family: 'Space Mono', monospace; couleur du texte */
+    padding: 50px;
+}
+
+.content {
+    max-width: 600px;
+}
+
+.greeting span {
+    background-color: #18e06e;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+h1 span {
+    color: #18e06e; /* couleur verte */
+}
+
+p {
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+.floating-menu-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000; /* Assure que le bouton est au-dessus du contenu */
+    cursor: pointer;
+  }
+  
+.logo {
+    display: flex;
+    align-items: center;
+  }
+.header {
+    display: flex;
+    justify-content: space-between; /* Espace entre le logo et le menu */
+    align-items: center;
+    padding: 20px;
+    background-color: #161b22;
+    position: fixed; /* Fixe le header en haut de la page */
+    width: 100%; /* Le header occupe toute la largeur de l'écran */
+    top: 0; /* Aligne en haut */
+    left: 0; /* Aligne à gauche */
+    z-index: 1000; /* Assure que le header est au-dessus du contenu */
+  }
+.logo-square {
+    width: 40px;
+    height: 40px;
+    background-color: #00FF00;
+    border-radius: 5px;
+}
+
+.avatar {
+    /* Ajouter votre image ou illustration d'avatar ici */
+}
