@@ -1,4 +1,12 @@
 /* src/components/HeroSection.css */
+@font-face {
+    font-family: 'wwDigital';
+    src: url('./wwDigital.ttf') format('truetype');
+}
+.main-content {
+    font-family: 'Orbitron', sans-serif;
+    color: #00FF00; /* Optionnel : couleur verte pour un effet numérique */
+  }
 body {
     display: flex;
     justify-content: space-between;
@@ -8,6 +16,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    font-family: 'wwDigital', sans-serif;
     /* couleur de fond sombre */
     color: #fff; 
     /* font-family: 'Space Mono', monospace; couleur du texte */
