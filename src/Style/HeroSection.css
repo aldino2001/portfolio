@@ -25,10 +25,11 @@ body {
 
 .content {
     max-width: 600px;
+    margin-top: 20%;
 }
 
 .greeting span {
-    background-color: #18e06e;
+    background-color: #18e06f6c;
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 18px;
