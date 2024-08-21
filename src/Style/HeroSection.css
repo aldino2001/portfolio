@@ -24,8 +24,9 @@ body {
 }
 
 .content {
-    max-width: 600px;
+    max-width: 700px;
     margin-top: 20%;
+    
 }
 
 .greeting span {
@@ -35,13 +36,13 @@ body {
     font-size: 18px;
 }
 
-h1 {
+h2 {
     font-size: 48px;
     font-weight: bold;
     line-height: 1.2;
 }
 
-h1 span {
+h2 span {
     color: #18e06e; /* couleur verte */
 }
 

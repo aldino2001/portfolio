@@ -7,10 +7,10 @@ const HeroSection = () => {
         <section className="hero-section">
             <div className="content">
                 <div className="greeting">
-                    <span >👋 Hi There! I'm Aldino</span>
+                    <span style={{fontSize:'22px' }} >👋 Hi There! I'm Aldino</span>
                 </div>
-                <h1>A <span>Backend Engineer</span> I Help Startups Launch And Grow Their Products</h1>
-                <p style={{ fontFamily: 'wwDigital, sans-serif' }}>
+                <h2>A <span>Backend Engineer</span> I Help Startups <span>Launch</span> And Grow Their <span>Products</span> </h2>
+                <p style={{fontSize:'26px', fontFamily: 'wwDigital, sans-serif' }}>
                     Over 3yrs+ of professional experience working with several programming tools to deliver quality results to clients. 
                     I have expert knowledge in frontend engineering, software testing, and web3 development.
                 </p>

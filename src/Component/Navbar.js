@@ -31,6 +31,7 @@ const FloatingMenuButton = () => {
       <Menu
         id="menu-appbar"
         anchorEl={anchorEl}
+        sx={{colo:'#00FF00'}}
         anchorOrigin={{
           vertical: 'top',
           horizontal: 'right',
@@ -43,9 +44,10 @@ const FloatingMenuButton = () => {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose}>Accueil</MenuItem>
-        <MenuItem onClick={handleClose}>Services</MenuItem>
-        <MenuItem onClick={handleClose}>Contact</MenuItem>
+        <MenuItem onClick={handleClose}>Home</MenuItem>
+        <MenuItem onClick={handleClose}>Project</MenuItem>
+        <MenuItem onClick={handleClose}>Skill</MenuItem>
+        <MenuItem onClick={handleClose}>Other</MenuItem>
       </Menu>
     </Box>
   );
