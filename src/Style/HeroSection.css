@@ -103,7 +103,7 @@ p {
     background-color:rgba(1, 5, 2, 0.575) ; /* Make the background transparent */
     padding: 20px; /* Default padding */
     border-radius: 20px;
-    width: 25%;
+    width: 20%;
     text-align: center;
     transition: transform 0.3s ease;
 }

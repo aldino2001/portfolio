@@ -3,19 +3,24 @@ import React from 'react';
 // Dummy data for the projects
 const projects = [
     {
-        title: 'Simple Chat',
-        description: 'Symple projet chat pour etablir une communication sur une groupe en Flask, Javascript , HTML/CSS',
+        title: 'Simple Chat 💬',
+        description: '📤Symple projet chat pour etablir une communication sur une groupe en Flask, Javascript , HTML/CSS📥',
         image: require('../Asset/opensource.png')
     },
     {
-        title: 'WEB Mapping',
-        description: "ces projet est orienté web conçu pour aidé des gens à interpreter la securité dans une cartier , c'est une application pour aide à la prise de decision , et aussi j'integré une vente immobilier à l'aide d'une map pour que le gens puissent voir l'emplacement des immobilier, developper avec typescript, SQL, Laravel",
-        image: require('../Asset/developer.jpg')
+        title: 'WEB Mapping 🌍',
+        description: "📍ces projet est orienté web conçu pour aidé des gens à interpreter la securité dans une cartier , c'est une application pour aide à la prise de decision , et aussi j'integré une vente immobilier à l'aide d'une map pour que le gens puissent voir l'emplacement des immobilier, developper avec typescript, SQL, Laravel",
+        image: require('../Asset/ebmapping2.jpg')
     },
     {
-        title: 'Project Three',
-        description: 'Description for project three. It showcases my expertise in frontend with Vue.js and TailwindCSS.',
-        image: require('../Asset/opensource.png')
+        title: 'Jeux Fanorona ',
+        description: " Opposant 2 joueurs, le but du jeu est d'aligner le premier ses 3 pions. Le plateau de jeu est vide initialement, les joueurs posant leurs pions un à un, puis les déplaçant d'une intersection vers une autre afin de tenter de former un alignement. coder en Python Avec la module pygame et puis j'integrer une jeux en reseau local ",
+        image: require('../Asset/fanorona-3.png')
+    },
+    {
+        title: 'Jeux serpent 🐍',
+        description: "Il n'y a que deux règles que vous devez suivre lorsque vous jouez : ne frappez pas un mur et ne vous mordez pas la vous même 😂😂. ",
+        image: require('../Asset/snake.png')
     },
 
 ];
