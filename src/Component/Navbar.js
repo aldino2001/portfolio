@@ -4,6 +4,7 @@ import MenuItem from '@mui/material/MenuItem';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Box from '@mui/material/Box';
+import { Link } from 'react-router-dom';
 
 const FloatingMenuButton = () => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -44,10 +45,9 @@ const FloatingMenuButton = () => {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose}>Home</MenuItem>
-        <MenuItem onClick={handleClose}>Project</MenuItem>
-        <MenuItem onClick={handleClose}>Skill</MenuItem>
-        <MenuItem onClick={handleClose}>Other</MenuItem>
+        
+        <MenuItem onClick={handleClose} component={Link} to="/">home</MenuItem>
+        <MenuItem onClick={handleClose} component={Link} to="/my-project">My project</MenuItem>
       </Menu>
     </Box>
   );

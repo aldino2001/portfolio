@@ -85,3 +85,46 @@ p {
 .avatar {
     /* Ajouter votre image ou illustration d'avatar ici */
 }
+
+/* My- PROJET */
+
+.project-content {
+    max-width: 700px;
+    margin-top: 08%;
+    
+}
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.project-item {
+    background-color:rgba(1, 5, 2, 0.575) ; /* Make the background transparent */
+    padding: 20px; /* Default padding */
+    border-radius: 20px;
+    width: 25%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+}
+
+.project-image {
+    width:70%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
