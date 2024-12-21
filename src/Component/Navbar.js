@@ -32,7 +32,7 @@ const FloatingMenuButton = () => {
       <Menu
         id="menu-appbar"
         anchorEl={anchorEl}
-        sx={{colo:'#00FF00'}}
+        sx={{color:'#00FF00'}}
         anchorOrigin={{
           vertical: 'top',
           horizontal: 'right',
@@ -45,7 +45,6 @@ const FloatingMenuButton = () => {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        
         <MenuItem onClick={handleClose} component={Link} to="/">home</MenuItem>
         <MenuItem onClick={handleClose} component={Link} to="/my-project">My project</MenuItem>
       </Menu>
